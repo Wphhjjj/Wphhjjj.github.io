@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>磁力链接转换</title>
+</head>
+
+<body>
+<p>输入迅雷链接:</p><input type="text" id="x" style="width:1000px; height:50px" value="">
+</br>
+<button onclick = thunderToNormal() style="width:100px;height:26px">转换</button>
+</br>
+<input type="text" id="y" style="width:1000px; height:50px" value="">
+
+	<script>
+	function thunderToNormal(){
+			var thunder = document.getElementById("x").value;//从id为x的input标签中获取迅雷链接的值
+			if(thunder.substring(0,10).search("thunder")!=-1||thunder.substring(0,10).search("Thunder")!=-1)//判断如果上一0~10个字符句获取到的字符中的第中包含thunder或Thunder
+			{
+			    thunder = thunder.substring(10,);//把thunder第十个字符(含第10个)开始到最后的字符赋值给自己 即去掉链接中 thunder://
+			var normal = window.atob(thunder);//base64解码
+			var len = normal.length-2;//获取长度
+			normal = normal.substring(2,len);
+			normal = decodeURI(normal);//url解码
+			document.getElementById("y").value = normal;//输出出到input文本框
+			}
+			else alert("所输入非迅雷链接!! 例：Thunder://QUFodHRwOi8vaW0uYmFpZHUuY29tL2luc3RhbGwvQmFpZHVIaS5leGVaWg==   注意：thunder://前不得有空格等其他字符");
+		}
+	</script>
+</body>
+<style>
+	.tp_advertising{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		background: #fff;
+		position: relative;
+		box-shadow: 0 0 3px rgba(0,0,0,.2);
+	}
+	.tp_advertising p{
+		color: #fff;
+		font-size: 14px;
+		line-height: 22px;
+		background: #6F8EC5;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin: 0;
+		padding: 0 8px;
+	    border-top-left-radius: 10px;
+	    opacity: .3;
+	}
+	.tp_advertising div{
+		width: 16.66%;
+		position: relative;
+		z-index: 1;
+	}
+	.tp_advertising a{
+		font-size: 12px;
+		line-height: 22px;
+		text-align: center;
+		display: block;
+		text-decoration: none;
+		white-space:nowrap;
+	}
+	.tp_advertising a:hover{
+		font-weight: bold;
+		font-size: 14px;
+		text-shadow: 0px 0px 1px rgba(0,0,0,.5);
+	}
+	.tp_1 a{
+		color: #FF0033;
+	}
+	.tp_2 a{
+		color: #9400D3;
+	}
+	.tp_3 a{
+		color: #00BFFF;
+	}
+	.tp_4 a{
+		color: #FF1493;
+	}
+	.tp_5 a{
+		color: #FF4500;
+	}
+	.tp_6 a{
+		color: #5fb878;
+	}
+</style>
+<div class="tp_advertising">
+	<p>广告</p>
+	<div class="tp_1">
+		<a href="https://url.cn/5Mfm01w" target="_blank">广告位招租</a>
+		<a href="https://url.cn/5Mfm01w" target="_blank">广告位招租</a>
+		<a href="https://url.cn/5Mfm01w" target="_blank">广告位招租</a>
+		<a href="https://url.cn/5Mfm01w" target="_blank">广告位招租</a>
+	  <a href="https://url.cn/5Mfm01w" target="_blank">广告位招租</a>
+		<a href="https://url.cn/5Mfm01w" target="_blank">广告位招租</a>
+	</div>
+	<div class="tp_2">
+		<a href="https://url.cn/5GAEhwP" target="_blank">广告位招租</a>
+		<a href="https://url.cn/5GAEhwP" target="_blank">广告位招租</a>
+		<a href="https://url.cn/5GAEhwP" target="_blank">广告位招租</a>
+		<a href="https://url.cn/5GAEhwP" target="_blank">广告位招租</a>
+		<a href="https://url.cn/5GAEhwP" target="_blank">广告位招租</a>
+		<a href="https://url.cn/5GAEhwP" target="_blank">广告位招租</a>
+	</div>
+	<div class="tp_3">
+		<a href="#" target="_blank">首页广告20元/30天</a>
+		<a href="#" target="_blank">广告招租20元一条</a>
+		<a href="#" target="_blank">首页广告一条20元</a>
+		<a href="#" target="_blank">广告招租80元一列</a>
+		<a href="#" target="_blank">首页广告一列80元</a>
+		<a href="#" target="_blank">小本生意概不还价</a>
+	</div>
+	<div class="tp_4">
+		<a href="#" target="_blank">【站长担保】邮箱：wph20111212@outlook.com</a>
+		<a href="#" target="_blank">【站长担保】邮箱：wph20111212@outlook.com</a>
+		<a href="#" target="_blank">【站长担保】邮箱：wph20111212@outlook.com</a>
+		<a href="#" target="_blank">【站长担保】邮箱：wph20111212@outlook.com</a>
+		<a href="#" target="_blank">【站长担保】邮箱：wph20111212@outlook.com</a>
+		<a href="#" target="_blank">【站长担保】邮箱：wph20111212@outlook.com</a>
+	</div>
+	<div class="tp_5">
+	  <a href="#" target="_blank">400元一条永久</a>
+	  <a href="#" target="_blank">400元一条永久</a>
+	  <a href="#" target="_blank">400元一条永久</a>
+	  <a href="#" target="_blank">400元一条永久</a>
+	  <a href="#" target="_blank">400元一条永久</a>
+	  <a href="#" target="_blank">400元一条永久</a>
+	</div>
+	<div class="tp_6">
+		<a href="#" target="_blank">广告招租</a>
+		<a href="#" target="_blank">广告招租</a>
+		<a href="#" target="_blank">广告招租</a>
+		<a href="#" target="_blank">广告招租</a>
+		<a href="#" target="_blank">广告招租</a>
+		<a href="#" target="_blank">广告招租</a>
+	</div>
+</div>
+</html>
